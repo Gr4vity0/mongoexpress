@@ -37,6 +37,11 @@ app.use(session({
 //* Routes
 app.use(homeRouter);
 
+//* Connexion à la db
+// - On pourrait juste mettre sans const si l'on entoure pas notre modele d'une fonction
+const connectDb = require('./models');
+connectDb();
+
 //* Couleurs pour le terminal
 const logColor = chalk.rgb(30, 250, 60);
 
