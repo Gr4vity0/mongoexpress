@@ -5,7 +5,7 @@ const express = require('express');
 const morgan = require('morgan');
 const session = require('express-session');
 const chalk = require('chalk');
-
+const homeRouter = require('./routes/home.router.js');
 
 //* Récupération des variables d'environnement
 const { NODE_ENV, PORT, SESSION_SECRET} = process.env;
@@ -33,7 +33,7 @@ app.use(session({
 }));
 
 //* Routes
-//! TODO Créer Router :)
+app.use(homeRouter);
 
 const logColor = chalk.rgb(30, 250, 60);
 
