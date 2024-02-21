@@ -1,0 +1,42 @@
+/* Génral */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body > main {
+    /* flex-grow: 1; */
+    padding: 1ch;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+/* Nav */
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+    padding: 1rem 2ch;
+    margin: 0;
+    gap: 2ch;
+
+    background-color: black;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+
+}

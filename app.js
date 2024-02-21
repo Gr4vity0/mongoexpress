@@ -2,10 +2,12 @@ require('dotenv').config({ override: true});
 
 //* Imports
 const express = require('express');
+require('express-async-errors');
 const morgan = require('morgan');
 const session = require('express-session');
 const chalk = require('chalk');
-const homeRouter = require('./routes/home.router.js');
+const homeRouter = require('./routes/home.router');
+
 
 //* Récupération des variables d'environnement
 const { NODE_ENV, PORT, SESSION_SECRET} = process.env;
@@ -35,6 +37,7 @@ app.use(session({
 //* Routes
 app.use(homeRouter);
 
+//* Couleurs pour le terminal
 const logColor = chalk.rgb(30, 250, 60);
 
 //* Démarrage du web serveur
