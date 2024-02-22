@@ -28,6 +28,7 @@ const articleSchema = mongoose.Schema({
     }
 }, {
     collection: 'Articles',
+    timestamps: true
 },
 );
 
