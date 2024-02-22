@@ -12,6 +12,7 @@ const homeController = {
         }
 
         await articleService.create(article);
+        console.log(data);
 
         res.render('home/index');        
     }
