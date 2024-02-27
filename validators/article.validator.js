@@ -7,7 +7,7 @@ const articleValidator = yup.object().shape({
     slug: yup.string()
             .optional(),
     tag: yup.array()
-            .of(yup.string().min(2, 'Un tag fait minimum 2 caractères')),
+            .of(yup.string()).compact((t) => t === ''),
     description: yup.string()
             .max(200, 'La description ne peut pas faire plus de 200 charactères'),
     content: yup.string()

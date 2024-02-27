@@ -35,7 +35,7 @@
     </div>
     <div class="article-form">
         <label for="input-content">Contenu</label>
-        <textarea id="input-content" type="text" name="content" data="<%= data['content'] %>"></textarea>
+        <textarea id="input-content" type="text" name="content" data="<%= data['content'] %>"  rows="10"></textarea>
         <% if(error && error['content']) {  %>
             <span class="error" id="error-content"><%= error['content'] %></span>
             <% } %>

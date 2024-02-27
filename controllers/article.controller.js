@@ -18,6 +18,7 @@ const articleController = {
 
     try {
         const data = await articleValidator.noUnknown().validate(req.body, { abortEarly: false});
+        
         console.log('data', data);
     }
 

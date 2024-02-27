@@ -68,23 +68,24 @@ form {
     margin-bottom: 1ch;
 }
 
-.article-form > div > label::after{
+.article-form > label::after{
     content: ':';
     margin-left: 0.3ch;
 }
 
-.article-form > div> input, .article-form > div > textarea {
+.article-form > input, .article-form > textarea {
     width: 100%;
     padding: 0.2ch;
     outline: none;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
-.article-form > div> input:focus, .article-form > div > textarea:focus {
+.article-form > input:focus, .article-form > textarea:focus {
     border-width: 2px;
 }
 
-.article-form> div> textarea {
+.article-form> textarea {
     resize: none;
     min-height: 20em;
 }
