@@ -43,19 +43,29 @@ nav a:hover {
 
 /* Article form */
 
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.article-form {
+    width: 50vh;
+}
+
 .article-form > div:not(:last-child){
-    margin-bottom: 0.5ch;
+    margin-bottom: 1ch;
 }
 
 
 .article-form > * {
     width: 100%;
-    margin-bottom: 0.3ch;
+    margin-bottom: 0.5ch;
 }
 
-.article-form > div > label {
+.article-form > label {
     font-size: 1.1em;
-    width: 100%;
+    margin-bottom: 1ch;
 }
 
 .article-form > div > label::after{
@@ -68,7 +78,6 @@ nav a:hover {
     padding: 0.2ch;
     outline: none;
     border: 1px solid black;
-    margin: 1px;
 }
 
 .article-form > div> input:focus, .article-form > div > textarea:focus {
