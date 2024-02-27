@@ -1,6 +1,6 @@
 const articleController = {
 
-    index: async(req,res,next) => {
+    index: async(req, res) => {
         res.render('article/index');        
     },
 

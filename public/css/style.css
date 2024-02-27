@@ -39,5 +39,48 @@ nav a {
 
 nav a:hover {
     transform: scale(1.1);
+}
 
+/* Article form */
+
+.article-form > div:not(:last-child){
+    margin-bottom: 0.5ch;
+}
+
+
+.article-form > * {
+    width: 100%;
+    margin-bottom: 0.3ch;
+}
+
+.article-form > div > label {
+    font-size: 1.1em;
+    width: 100%;
+}
+
+.article-form > div > label::after{
+    content: ':';
+    margin-left: 0.3ch;
+}
+
+.article-form > div> input, .article-form > div > textarea {
+    width: 100%;
+    padding: 0.2ch;
+    outline: none;
+    border: 1px solid black;
+    margin: 1px;
+}
+
+.article-form > div> input:focus, .article-form > div > textarea:focus {
+    border-width: 2px;
+}
+
+.article-form> div> textarea {
+    resize: none;
+    min-height: 20em;
+}
+
+.article-form .error {
+    color: crimson;
+    font-style: oblique;
 }

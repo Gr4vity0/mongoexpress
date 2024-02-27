@@ -7,6 +7,7 @@ const morgan = require('morgan');
 const session = require('express-session');
 const chalk = require('chalk');
 const homeRouter = require('./routes/home.router');
+const articleRouter = require('./routes/article.router');
 
 
 //* Récupération des variables d'environnement
@@ -36,6 +37,7 @@ app.use(session({
 
 //* Routes
 app.use(homeRouter);
+app.use(articleRouter);
 
 //* Connexion à la db
 // - On pourrait juste mettre sans const si l'on entoure pas notre modele d'une fonction
