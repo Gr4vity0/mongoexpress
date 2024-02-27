@@ -34,9 +34,10 @@ nav > ul {
 nav a {
     color: whitesmoke;
     text-decoration: none;
+    display: inline-block;
 }
 
 nav a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 
 }

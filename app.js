@@ -15,7 +15,7 @@ const { NODE_ENV, PORT, SESSION_SECRET} = process.env;
 //* Initialize
 const app = express();
 
-//* Config du moteur de vuz
+//* Config du moteur de vue
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
